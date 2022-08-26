@@ -1,0 +1,449 @@
+/* menu */
+.bodyy {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh; */
+    font-family: verdana;
+     background-color:rgba(8, 13, 38, 0.9);
+     position: fixed;
+     width: 100%;
+     z-index: 100;
+     opacity: 100%;
+     height: 70px;
+   }
+   
+   ul {
+     padding: 0;
+     display: flex;
+   }
+   
+   li {
+     list-style-type: none;
+     padding: 10px 20px;
+   }
+   
+   a {
+     text-decoration: none;
+     text-transform: uppercase;
+     font-size: 20px;
+     color: white;
+     position: relative;
+   }
+   
+   ul li a:before {
+     content: "";
+     width: 0;
+     height: 5px;
+     background-color: #00bcd4;
+     position: absolute;
+     top: 120%;
+     left: 0;
+     transition: all 0.5s;
+   }
+   
+   ul li a:after {
+     content: "";
+     width: 0;
+     height: 5px;
+     background-color: #f0f;
+     position: absolute;
+     top: 120%;
+     right: 0;
+     transition: all 0.5s;
+   }
+   
+   ul li a:hover:before {
+     width: 50%;
+     transform: translateX(100%);
+   }
+   
+   ul li a:hover:after {
+     width: 50%;
+     transform: translateX(-100%);
+   }
+   /*
+   next
+   */
+
+@font-face {
+    font-family: "Outfit";
+    src: url("https://fonts.google.com/specimen/Outfit");
+    /* Weights: 300, 400, 600 */
+}
+
+:root {
+    /* Width layout */
+    --width-mobile: 375px;
+    --desktop: 1440px;
+
+    /* Colors */
+    --primary-Soft-blue: hsl(215, 51%, 70%);
+    --primary-Cyan: hsl(178, 100%, 50%);
+
+    --main-Very-dark-blue: hsl(217, 54%, 11%);
+    --card-Very-dark-blue: hsl(216, 50%, 16%);
+    --line-Very-dark-blue: hsl(215, 32%, 27%);
+    --neutral-White: hsl(0, 0%, 100%);
+
+    /* Font */
+    --Font-paragraph-size: 18px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    background-color: var(--main-Very-dark-blue);
+    font-family: "Outfit", Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: var(--desktop);
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+
+.card-container {
+    background-color: var(--card-Very-dark-blue);
+    width: min(87.5%, 22rem);
+    margin: 2rem auto;
+    padding: 1.4rem;
+    border-radius: 5%;
+    box-shadow: 0 1rem 3rem rgb(0 0 0 / 50%);
+    position: relative;
+}
+
+.image-header:hover .overlay + .view {
+    display: block;
+}
+
+.image-header {
+    position: relative;
+    /* max-width: 100%;
+    height: 100%; */
+}
+
+.image-main {
+    position: relative;
+    max-width: 100%;
+    height: 200px;
+    cursor: pointer;
+    border-radius: 5%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    height: 98%;
+    width: 100%;
+    opacity: 0;
+    background-color: var(--primary-Cyan);
+    border-radius: 5%;
+}
+
+.view {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+    
+.image-header:hover .overlay {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.tittle-card {
+    font-size: 1.3rem;
+    color: var(--neutral-White);
+    font-weight: 600;
+    cursor: pointer;
+    margin: 1.1rem 0 .7rem 0;
+}
+
+.tittle-card:hover {
+    color: var(--primary-Cyan);
+}
+
+.text-card {
+    font-size: var(--Font-paragraph-size);
+    color: var(--primary-Soft-blue);
+    font-weight: 300;
+    margin: .7rem 0;
+}
+
+.items-card {
+    margin: .7rem 0 1rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.img-item {
+    height: 1.3rem;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.eth {
+    color: var(--primary-Cyan);
+    font-weight: 600;
+    vertical-align: middle;
+}
+
+.days {
+    color: var(--primary-Soft-blue);
+    font-weight: 400;
+    vertical-align: middle;
+}
+
+.creator-section {
+    color: var(--primary-Soft-blue);
+    display: flex;
+    flex-direction: row;
+    padding: .7rem 0 0 0;
+    align-items:center;
+    border-top: 2px solid var(--line-Very-dark-blue);
+    text-align: center;
+}
+
+.img-creator {
+    height: 2.5rem;
+    vertical-align: middle;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.text-creator {
+    color: var(--primary-Soft-blue);
+    font-weight: 400;
+    margin: 0 1rem;
+    vertical-align: middle;
+}
+
+.name-creator {
+    text-decoration: none;
+    font-weight: 400;
+    margin: 0 .1rem;
+    color: var(--neutral-White);
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.name-creator:hover {
+    color: var(--primary-Cyan);
+}
+
+@media (max-width: 375px) {
+    .card-container {
+        margin: 4rem auto;
+    }
+
+    .tittle-card {
+        font-size: 1.2rem;
+    }
+
+    .text-card, 
+    .items-card {
+        font-size: 17px;
+    }
+
+    .name-creator,
+    .text-creator {
+        font-size: 17px;
+        display: inline-block;
+    }
+}
+
+
+
+/*
+
+*/
+/* * {
+    box-sizing: border-box;
+  } */
+
+  [data-wipe] {
+    display: inline-block;
+    padding: 12px 18px;
+    text-decoration: none;
+    position: relative;
+    border: 2px solid #445561;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--primary-Cyan);
+    overflow: hidden;
+    text-align: center;
+  }
+  [data-wipe]:before, [data-wipe]:after {
+    content: attr(data-wipe);
+    padding-top: inherit;
+    padding-bottom: inherit;
+    white-space: nowrap;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    color: black;
+    background: var(--primary-Cyan);
+    text-align: center;
+  }
+  [data-wipe]:before {
+    left: 0;
+    text-indent: 18px;
+    width: 0;
+  }
+  [data-wipe]:after {
+    padding-left: inherit;
+    padding-right: inherit;
+    left: 100%;
+    text-indent: calc(-100% - 36px);
+    transition: 0.2s ease-in-out;
+    text-align: center;
+  }
+  [data-wipe]:hover:before {
+    width: 100%;
+    transition: width 0.2s ease-in-out;
+    text-align: center;
+  }
+  [data-wipe]:hover:after {
+    left: 0;
+    text-indent: 0;
+    transition: 0s 0.2s ease-in-out;
+    text-align: center;
+  }
+  
+
+  /*
+  flag
+  */
+  .property-card-flag {
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    z-index: 1;
+    overflow: hidden;
+    width: 175px;
+    height: 175px;
+    text-align: center;
+  }
+  .property-card-flag span {
+    font-size: 12px;
+    color: #FFF;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 20px;
+    transform: rotate(45deg);
+    width: 200px;
+    display: block;
+    /*   background: #79A70A; */
+    /*   background: linear-gradient(#9BC90D 0%, #79A70A 100%); */
+    box-shadow: 0 3px 10px -5px black;
+    position: absolute;
+    padding: 5px 0;
+    top: 48px;
+    right: -39px;
+  }
+  .property-card-flag span::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 100%;
+    z-index: -1;
+    border-right: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid transparent;
+  }
+  .property-card-flag span::after {
+    content: "";
+    position: absolute;
+    right: 0px;
+    top: 100%;
+    z-index: -1;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid transparent;
+  }
+  .flag-accept-funding span {
+    background: #0091ea;
+    background: linear-gradient(#00b0ff 0%, #0091ea 100%);
+  }
+  .flag-accept-funding span::before {
+    border-top-color: #0091ea;
+  }
+  .flag-accept-funding span::after {
+    border-right-color: #0091ea;
+    border-top-color: #0091ea;
+  }
+
+
+  .addButton {
+    background-color: #0091ea;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 40px;
+  text-align: center;
+  border-radius: 50%;
+
+  position: fixed;
+   bottom: 30px; 
+   right: 30px;
+   width: 65px;
+   height: 65px;
+   cursor: pointer;
+  }
+  
+
+  /* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 10; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }

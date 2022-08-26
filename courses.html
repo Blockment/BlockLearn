@@ -1,0 +1,259 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  
+    <link rel="icon" type="image/png" sizes="32x32" href="https://raw.githubusercontent.com/Jean-carje/nft-preview-card-component-main/main/images/favicon-32x32.png">
+    <link rel="stylesheet" href="courses.css">
+    
+    <title>Frontend Mentor | NFT preview card component</title>
+  
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution { font-size: 11px; text-align: center; }
+      .attribution a { color: hsl(228, 45%, 44%); }
+    </style>
+  </head>
+  <body>
+
+    <div class="bodyy">
+      <ul>
+        <li><a href="index.html#container">home</a></li>
+        <li><a href="index.html#about">about</a></li>
+        <li><a href="courses.html">courses</a></li>
+        <li><a href="index.html#contact">contact</a></li>
+        <li><a href="login.html">login</a></li>
+        <li><a href="register.html">register</a></li>
+    </ul>
+  </div>
+
+
+    <button class="addButton" id="myBtn">
+     +
+    </button>
+
+    <!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div style="color: black;">
+  <div class="modal-content">
+    <h2 style="color: black; margin-bottom: 30px;">Create A New Class</h2>
+    <form action="">
+      <label for="cname" style="color: black;">Class Name:</label><br>
+      <input type="text" id="cname" name="cname" value="Game Theory"><br><br>
+      <label for="pname" style="color: black;">Professor Name:</label><br>
+      <input type="text" id="pname" name="pname" value="Dr. Mojtaba Tefagh"><br><br>
+      <label for="fileToUpload" style="color: black;">Upload Course Image:</label><br>
+      <input type="file" name="fileToUpload" id="fileToUpload"><br><br><br>
+      <input type="submit" value="Create Class" style="color: black;">
+    </form> 
+    </div>
+    <span class="close">&times;</span>
+  </div>
+
+</div>
+<script src="courses.js"></script>
+
+  <div style="padding-top: 80px;">
+    <main class="container">
+      <section class="card-container">
+        <div class="property-card-flag flag-accept-funding">
+          <span>My Classes</span>
+        </div>
+        <header class="image-header">
+          <img src="images/game_theory.jpg" alt="image equilibrium" class="image-main">
+          <div class="overlay"></div>
+          <img src="https://raw.githubusercontent.com/Jean-carje/nft-preview-card-component-main/82a22800073516e524360d46b8bf4aafaa8d1283/images/icon-view.svg" alt="" class="view">
+        </header>
+          <h1 class="tittle-card">Game Theory</h1>
+          
+        <p class="text-card">Professor: Dr. Mojtaba Tefagh</p>
+        
+        <div class="items-card">
+          <div class="left">
+            <img src="images/user.png" alt="" class="img-item">
+            <spam class="eth">31 Students</spam>
+          </div>
+          <div class="right">
+            <img src="https://raw.githubusercontent.com/Jean-carje/nft-preview-card-component-main/82a22800073516e524360d46b8bf4aafaa8d1283/images/icon-clock.svg" alt="" class="img-item">
+            <spam class="days">3 July 2022</spam>
+          </div>
+        </div>
+        
+        <footer class="creator-section" style="text-align: center;">
+          <!-- <img src="https://avatars.githubusercontent.com/u/66575135?s=400&u=4e316d2a8fd2ddd46d3cf94cdb25b86b4ebd081c&v=4" alt="" class="img-creator">
+          <p class="text-creator">Creation of <a href="https://github.com/Jean-carje" class="name-creator">Jean Estevez</a></p> -->
+          <div style=" width: 100%;">
+            <a href="#" class="btn" data-wipe="View Class">View Class</a>
+          </div>
+        </footer>
+        
+      </section>
+
+      <section class="card-container">
+        <div class="property-card-flag flag-accept-funding">
+          <span>My Classes</span>
+        </div>
+        <header class="image-header">
+          <img src="images/game_theory.jpg" alt="image equilibrium" class="image-main">
+          <div class="overlay"></div>
+          <img src="https://raw.githubusercontent.com/Jean-carje/nft-preview-card-component-main/82a22800073516e524360d46b8bf4aafaa8d1283/images/icon-view.svg" alt="" class="view">
+        </header>
+          <h1 class="tittle-card">Game Theory</h1>
+          
+        <p class="text-card">Professor: Dr. Mojtaba Tefagh</p>
+        
+        <div class="items-card">
+          <div class="left">
+            <img src="images/user.png" alt="" class="img-item">
+            <spam class="eth">31 Students</spam>
+          </div>
+          <div class="right">
+            <img src="https://raw.githubusercontent.com/Jean-carje/nft-preview-card-component-main/82a22800073516e524360d46b8bf4aafaa8d1283/images/icon-clock.svg" alt="" class="img-item">
+            <spam class="days">3 July 2022</spam>
+          </div>
+        </div>
+        
+        <footer class="creator-section" style="text-align: center;">
+          <!-- <img src="https://avatars.githubusercontent.com/u/66575135?s=400&u=4e316d2a8fd2ddd46d3cf94cdb25b86b4ebd081c&v=4" alt="" class="img-creator">
+          <p class="text-creator">Creation of <a href="https://github.com/Jean-carje" class="name-creator">Jean Estevez</a></p> -->
+          <div style=" width: 100%;">
+            <a href="#" class="btn" data-wipe="View Class">View Class</a>
+          </div>
+        </footer>
+        
+      </section>
+
+      <section class="card-container">
+        <div class="property-card-flag flag-accept-funding">
+          <span>My Classes</span>
+        </div>
+        <header class="image-header">
+          <img src="images/game_theory.jpg" alt="image equilibrium" class="image-main">
+          <div class="overlay"></div>
+          <img src="https://raw.githubusercontent.com/Jean-carje/nft-preview-card-component-main/82a22800073516e524360d46b8bf4aafaa8d1283/images/icon-view.svg" alt="" class="view">
+        </header>
+          <h1 class="tittle-card">Game Theory</h1>
+          
+        <p class="text-card">Professor: Dr. Mojtaba Tefagh</p>
+        
+        <div class="items-card">
+          <div class="left">
+            <img src="images/user.png" alt="" class="img-item">
+            <spam class="eth">31 Students</spam>
+          </div>
+          <div class="right">
+            <img src="https://raw.githubusercontent.com/Jean-carje/nft-preview-card-component-main/82a22800073516e524360d46b8bf4aafaa8d1283/images/icon-clock.svg" alt="" class="img-item">
+            <spam class="days">3 July 2022</spam>
+          </div>
+        </div>
+        
+        <footer class="creator-section" style="text-align: center;">
+          <!-- <img src="https://avatars.githubusercontent.com/u/66575135?s=400&u=4e316d2a8fd2ddd46d3cf94cdb25b86b4ebd081c&v=4" alt="" class="img-creator">
+          <p class="text-creator">Creation of <a href="https://github.com/Jean-carje" class="name-creator">Jean Estevez</a></p> -->
+          <div style=" width: 100%;">
+            <a href="#" class="btn" data-wipe="View Class">View Class</a>
+          </div>
+        </footer>
+        
+      </section>
+    </main>
+
+    <main class="container">
+      <section class="card-container">
+        <header class="image-header">
+          <img src="images/game_theory.jpg" alt="image equilibrium" class="image-main">
+          <div class="overlay"></div>
+          <img src="https://raw.githubusercontent.com/Jean-carje/nft-preview-card-component-main/82a22800073516e524360d46b8bf4aafaa8d1283/images/icon-view.svg" alt="" class="view">
+        </header>
+          <h1 class="tittle-card">Game Theory</h1>
+          
+        <p class="text-card">Professor: Dr. Mojtaba Tefagh</p>
+        
+        <div class="items-card">
+          <div class="left">
+            <img src="images/user.png" alt="" class="img-item">
+            <spam class="eth">31 Students</spam>
+          </div>
+          <div class="right">
+            <img src="https://raw.githubusercontent.com/Jean-carje/nft-preview-card-component-main/82a22800073516e524360d46b8bf4aafaa8d1283/images/icon-clock.svg" alt="" class="img-item">
+            <spam class="days">3 July 2022</spam>
+          </div>
+        </div>
+        
+        <footer class="creator-section" style="text-align: center;">
+          <!-- <img src="https://avatars.githubusercontent.com/u/66575135?s=400&u=4e316d2a8fd2ddd46d3cf94cdb25b86b4ebd081c&v=4" alt="" class="img-creator">
+          <p class="text-creator">Creation of <a href="https://github.com/Jean-carje" class="name-creator">Jean Estevez</a></p> -->
+          <div style=" width: 100%;">
+            <a href="#" class="btn" data-wipe="Join Class">Join Class</a>
+          </div>
+        </footer>
+        
+      </section>
+
+      <section class="card-container">
+        <header class="image-header">
+          <img src="images/game_theory.jpg" alt="image equilibrium" class="image-main">
+          <div class="overlay"></div>
+          <img src="https://raw.githubusercontent.com/Jean-carje/nft-preview-card-component-main/82a22800073516e524360d46b8bf4aafaa8d1283/images/icon-view.svg" alt="" class="view">
+        </header>
+          <h1 class="tittle-card">Game Theory</h1>
+          
+        <p class="text-card">Professor: Dr. Mojtaba Tefagh</p>
+        
+        <div class="items-card">
+          <div class="left">
+            <img src="images/user.png" alt="" class="img-item">
+            <spam class="eth">31 Students</spam>
+          </div>
+          <div class="right">
+            <img src="https://raw.githubusercontent.com/Jean-carje/nft-preview-card-component-main/82a22800073516e524360d46b8bf4aafaa8d1283/images/icon-clock.svg" alt="" class="img-item">
+            <spam class="days">3 July 2022</spam>
+          </div>
+        </div>
+        
+        <footer class="creator-section" style="text-align: center;">
+          <!-- <img src="https://avatars.githubusercontent.com/u/66575135?s=400&u=4e316d2a8fd2ddd46d3cf94cdb25b86b4ebd081c&v=4" alt="" class="img-creator">
+          <p class="text-creator">Creation of <a href="https://github.com/Jean-carje" class="name-creator">Jean Estevez</a></p> -->
+          <div style=" width: 100%;">
+            <a href="#" class="btn" data-wipe="Join Class">Join Class</a>
+          </div>
+        </footer>
+        
+      </section>
+
+      <section class="card-container">
+        <header class="image-header">
+          <img src="images/game_theory.jpg" alt="image equilibrium" class="image-main">
+          <div class="overlay"></div>
+          <img src="https://raw.githubusercontent.com/Jean-carje/nft-preview-card-component-main/82a22800073516e524360d46b8bf4aafaa8d1283/images/icon-view.svg" alt="" class="view">
+        </header>
+          <h1 class="tittle-card">Game Theory</h1>
+          
+        <p class="text-card">Professor: Dr. Mojtaba Tefagh</p>
+        
+        <div class="items-card">
+          <div class="left">
+            <img src="images/user.png" alt="" class="img-item">
+            <spam class="eth">31 Students</spam>
+          </div>
+          <div class="right">
+            <img src="https://raw.githubusercontent.com/Jean-carje/nft-preview-card-component-main/82a22800073516e524360d46b8bf4aafaa8d1283/images/icon-clock.svg" alt="" class="img-item">
+            <spam class="days">3 July 2022</spam>
+          </div>
+        </div>
+        
+        <footer class="creator-section" style="text-align: center;">
+          <!-- <img src="https://avatars.githubusercontent.com/u/66575135?s=400&u=4e316d2a8fd2ddd46d3cf94cdb25b86b4ebd081c&v=4" alt="" class="img-creator">
+          <p class="text-creator">Creation of <a href="https://github.com/Jean-carje" class="name-creator">Jean Estevez</a></p> -->
+          <div style=" width: 100%;">
+            <a href="#" class="btn" data-wipe="Join Class">Join Class</a>
+          </div>
+        </footer>
+        
+      </section>
+    </main>
+  </div>
+  
+    <script src="courses.js"></script>
+  </body>
