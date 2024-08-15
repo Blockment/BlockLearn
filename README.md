@@ -1,13 +1,13 @@
 # BlockLearn
 
-BlockLearn is an innovative educational platform that leverages blockchain technology to deliver and certify a broad spectrum of online courses. This platform ensures secure transactions and verifiable certifications, providing a reliable and transparent learning experience similar to traditional offerings like Coursera.
+BlockLearn is an innovative learning platform that leverages blockchain technology to offer a diverse range of educational courses similar to offerings on platforms like Coursera. The platform facilitates secure transactions and maintains immutable records of learners' achievements and certifications.
 
 ## Features
 
-- **Blockchain Integration**: Ensures secure course transactions and verifiable certificate issuance.
-- **Interactive Course Modals**: Engages users with dynamic content pop-ups for course details and enrollment.
-- **User Authentication**: Manages user sign-ups, logins, and profiles securely.
-- **Dynamic Content Management**: Allows administrators to update course content and manage user interactions seamlessly.
+- **Course Enrollment:** Users can browse and enroll in a wide array of courses covering different subjects.
+- **Interactive Learning:** Through interactive JavaScript elements, learners can engage with course content in a dynamic environment.
+- **Certification:** Completion of courses leads to blockchain-verified certifications that can be securely shared and verified in real-time.
+- **User Profile Management:** Users can create and manage their profiles, allowing for a personalized learning experience.
 
 ## How to Run
 
@@ -15,10 +15,10 @@ To run BlockLearn on your local machine, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone URL_TO_REPOSITORY
+   git clone https://github.com/Blockment/BlockLearn
    ```
 
-Open the `index.html` file in a modern web browser.
+2. Open the `index.html` file in a modern web browser.
 
 ## Project Structure
 
@@ -32,3 +32,7 @@ Open the `index.html` file in a modern web browser.
 - CSS3
 - JavaScript
 
+## Maintainers
+
+- [Iman Mohammadi](https://github.com/Imanm02)
+- [Sina Elahimanesh](https://github.com/SinaElahimanesh)
