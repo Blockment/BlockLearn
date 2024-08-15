@@ -178,7 +178,7 @@ form 2
     transition: all 0.3s ease-in-out;
   }
   .basic-slide::-webkit-input-placeholder {
-    color: #efefef;
+    color: #442727;
     text-indent: 0;
     font-weight: 300;
   }

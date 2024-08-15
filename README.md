@@ -6,7 +6,7 @@ BlockLearn is an innovative learning platform that leverages blockchain technolo
 
 - **Course Enrollment:** Users can browse and enroll in a wide array of courses covering different subjects.
 - **Interactive Learning:** Through interactive JavaScript elements, learners can engage with course content in a dynamic environment.
-- **Certification:** Completion of courses leads to blockchain-verified certifications that can be securely shared and verified in real-time.
+- **Certification:** Completion of courses leads to blockchain-verified certifications that can be securely shared and verified in real time.
 - **User Profile Management:** Users can create and manage their profiles, allowing for a personalized learning experience.
 
 ## How to Run
